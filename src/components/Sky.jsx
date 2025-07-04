@@ -13,7 +13,7 @@ const Sky = () => {
         return (
             <div 
               key={index} 
-              className='size-px bg-white rounded-full absolute  '
+              className='size-0.5 bg-white rounded-full absolute  '
               style={{
                   top: `${top}%`,
                   left: `${left}%`,
@@ -37,7 +37,7 @@ const Sky = () => {
     })
   return (
     
-      <div className='relative w-full h-full '>
+      <div className='absolute w-full h-full '>
         {stars}{pulseStars}
         <ShootingStar/>
         
