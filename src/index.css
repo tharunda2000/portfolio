@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@keyframes shootingStar {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(1500px) translateY(-1500px);
+    }
+    
+}
+
+
+
+.animate-shooting{
+    animation: shootingStar 4s linear forwards;
+}
+
