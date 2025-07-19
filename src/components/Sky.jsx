@@ -37,7 +37,7 @@ const Sky = () => {
     })
   return (
     
-      <div className='absolute w-full  h-screen bg-neutral-950 '>
+      <div className='absolute w-screen  h-screen bg-neutral-950 '>
         {stars}{pulseStars}
         <ShootingStar/>
         
