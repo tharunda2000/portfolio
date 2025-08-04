@@ -28,7 +28,7 @@ const Sky = () => {
         return (
             <div 
               key={index} 
-              className='size-px bg-white rounded-full absolute animate-pulse '
+              className='size-px bg-white rounded-full fixed animate-pulse '
               style={{
                   top: `${top}%`,
                   left: `${left}%`,
