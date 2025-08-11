@@ -12,7 +12,7 @@ const Home = () => {
       <Navbar/>
       <MainBanner/>
       
-      <div className='relative bottom-10 lg:bottom-120'>
+      <div className='relative mx-15 lg:mx-0 bottom-10 lg:bottom-120'>
         <SideBar/>
       </div>
     </div>
