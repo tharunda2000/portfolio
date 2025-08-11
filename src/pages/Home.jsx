@@ -12,7 +12,9 @@ const Home = () => {
       <Navbar/>
       <MainBanner/>
       <Planets/>
-      <SideBar/>
+      <div className='relative bottom-10 lg:bottom-120'>
+        <SideBar/>
+      </div>
     </div>
   )
 }
