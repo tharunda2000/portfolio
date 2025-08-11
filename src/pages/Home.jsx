@@ -11,7 +11,7 @@ const Home = () => {
       <Sky/>
       <Navbar/>
       <MainBanner/>
-      <Planets/>
+      
       <div className='relative bottom-10 lg:bottom-120'>
         <SideBar/>
       </div>
