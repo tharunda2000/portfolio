@@ -44,7 +44,7 @@ const ContactPage = () => {
 
           
 
-          <div className='flex flex-col  w-full lg:w-180 h-full items-center justify-center bg-white/6 backdrop-blur-xl mt-40 lg:mt-50 rounded-4xl p-10 gap-6'>
+          <div className='flex flex-col  w-full lg:w-180 h-145 lg:h-full items-center justify-center bg-white/6 backdrop-blur-xl mt-40 lg:mt-50 rounded-4xl p-10 gap-6'>
                 <h1 className='text-gray-400 jersey text-5xl lg:text-7xl mb-5'>Contact Me</h1>
 
                 
