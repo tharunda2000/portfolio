@@ -25,7 +25,7 @@ const Navbar = () => {
             <h1 className='cursor-pointer ' onClick={()=>{navigate('/')}}>Home</h1>
             <h1 className='cursor-pointer ' onClick={()=>{navigate('/about')}}>About</h1>
             <h1 className='cursor-pointer' onClick={()=>{navigate('/projects')}}>Projects</h1>
-            <h1 className='cursor-pointer'>contact</h1>
+            <h1 className='cursor-pointer' onClick={()=>{navigate('/contact')}}>contact</h1>
             
             
         </div>
@@ -35,7 +35,7 @@ const Navbar = () => {
             <h1 className='cursor-pointer' onClick={()=>{navigate('/')}}>Home</h1>
             <h1 className='cursor-pointer ' onClick={()=>{navigate('/about')}}>About</h1>
             <h1 className='cursor-pointer' onClick={()=>{navigate('/projects')}}>Projects</h1>
-            <h1 className='cursor-pointer'>contact</h1>
+            <h1 className='cursor-pointer' onClick={()=>{navigate('/contact')}}>contact</h1>
 
           
 

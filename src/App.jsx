@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import ProjectsPage from './pages/ProjectsPage'
 import { BrowserRouter,createBrowserRouter,RouterProvider } from 'react-router-dom'
 import About from './pages/About'
+import ContactPage from './pages/ContactPage'
 
 const App = () => {
 
