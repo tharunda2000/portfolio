@@ -1,8 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Sky from '../components/Sky'
 import Navbar from '../components/Navbar'
 
 const ContactPage = () => {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [number,setnumber] = useState("");
+  const [message, setMessage] = useState("");
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); 
+
+    await fetch("https://script.google.com/macros/s/AKfycbyb5jNiJVy8TZ9xFLZmTuAUEP2ItOkPb6n7AnHZcmi4cPQ9t2EzFN3fcGIbSkWe4OF9/exec", {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name,
+        email,
+        number,
+        message
+      })
+    });
+
+    alert("Message sent!");
+
+    
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+  
   return (
     <div>
         <div className='fixed'>
@@ -21,6 +51,7 @@ const ContactPage = () => {
                 <input 
                   type="text" 
                   placeholder="Your Name" 
+                  onChange={(e)=>{setName(e.target.value)}}
                   className='w-72 lg:w-120 p-3 rounded-xl border border-white/30 bg-white/10 text-white placeholder-gray-300 focus:outline-none focus:border-white/50'
                 />
 
@@ -28,12 +59,14 @@ const ContactPage = () => {
                 <input 
                   type="email" 
                   placeholder="Your Email" 
+                   onChange={(e)=>{setEmail(e.target.value)}}
                   className='w-72 lg:w-120 p-3 rounded-xl border border-white/30 bg-white/10 text-white placeholder-gray-300 focus:outline-none focus:border-white/50'
                 />
 
                 <input 
                   type="text" 
-                  placeholder="Your Mobile" 
+                  placeholder="Your Mobile"
+                   onChange={(e)=>{setnumber(e.target.value)}} 
                   className='w-72 lg:w-120 p-3 rounded-xl border border-white/30 bg-white/10 text-white placeholder-gray-300 focus:outline-none focus:border-white/50'
                 />
 
@@ -41,12 +74,14 @@ const ContactPage = () => {
                 <textarea 
                   placeholder="Your Message" 
                   rows="5" 
+                   onChange={(e)=>{setMessage(e.target.value)}}
                   className='w-72 lg:w-120 p-3 rounded-xl border border-white/30 bg-white/10 text-white placeholder-gray-300 focus:outline-none focus:border-white/50 resize-none'
                 ></textarea>
 
                 
                 <button 
                   className='mt-4 px-8 py-3 text-lg font-bold text-white bg-black rounded-xl shadow-lg border border-white/30 hover:bg-white hover:text-black transition-colors duration-300 cursor-pointer'
+                  onClick={handleSubmit}
                 >
                   Send Message
                 </button>
