@@ -5,7 +5,14 @@ const SideBar = () => {
     <div>
 
       {/* desktop */}
-        <div className='flex items-center justify-center  gap-2 h-20 w-90 lg:flex lg:items-center lg:justify-evenly absolute lg:flex-col lg:w-20 lg:h-100 bg-white/6 backdrop-blur-2xs lg:mx-0  border border-white/30  z-51 text-white top-65 lg:left-8 rounded-xl shadow-white shadow-sm'>
+        <div className='
+          flex items-center justify-center gap-2 h-20 px-4
+          fixed bottom-10  left-1/2 -translate-x-1/2
+          lg:flex lg:flex-col lg:items-center lg:justify-evenly 
+          lg:top-1/2 lg:-translate-y-1/2 lg:left-18 lg:w-20 lg:h-100 
+          bg-white/6 backdrop-blur-2xs border border-white/30 
+          z-51 text-white rounded-xl shadow-white shadow-sm
+        '>
 
            <div className='flex justify-center items-center w-15 h-15 my-2 bg-white/6 backdrop-blur-2xs  border border-white/30  z-51 text-white top-60 left-8 rounded-xl shadow-white shadow-sm'>
                 <a href="https://www.linkedin.com/in/tharunda">
